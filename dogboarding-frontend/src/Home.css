@@ -1,0 +1,125 @@
+.home-main-container {
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.home-right-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.home-images {
+    width: 100%;
+    height: auto;
+}
+
+.home-left-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.home-headline {
+    font-weight: bold;
+    color: #D26524;
+}
+
+.home-button {
+    background-color: #D26524;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 266px;
+    padding-block: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+.home-button:hover {
+    background-color: #ec7028;
+    transform: scale(1.01);
+}
+
+.home-button-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F0F0F0;
+}
+
+@media (max-width: 371px) {
+    .home-main-container {
+        padding-block: 96px;
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+    .home-left-container {
+        align-items: center;
+        gap: 48px;
+    }
+    .home-right-container {
+        width: 100%;
+    }
+    .home-headline {
+        font-size: 39px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 372px) {
+    .home-main-container {
+        padding-block: 96px;
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+    .home-left-container {
+        align-items: center;
+        gap: 48px;
+    }
+    .home-right-container {
+        max-width: 100%;
+    }
+    .home-headline {
+        font-size: 39px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .home-main-container {
+        padding-block: 96px;
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+    .home-left-container {
+        align-items: center;
+        gap: 48px;
+    }
+    .home-right-container {
+        max-width: 100%;
+    }
+    .home-headline {
+        font-size: 39px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-main-container {
+        padding-block: 96px;
+        gap: 24px;
+    }
+    .home-left-container {
+        gap: 48px;
+        width: 100%;
+    }
+    .home-right-container {
+        width: 100%;
+    }
+    .home-headline {
+        font-size: 39px;
+    }
+}

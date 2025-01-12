@@ -1,0 +1,398 @@
+.sitter-profile-main-container {
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-block: 48px 96px;
+}
+
+.sitter-profile-section-container {
+    max-width: 740px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sitter-profile-sticky-container {
+    max-width: 360px;
+    width: 360px;
+}
+
+@media (max-width: 767px) {
+    .sitter-profile-sticky-container {
+        display: none;
+    }
+    .sitter-profile-sticky-container-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    .sitter-profile-sticky-main-container {
+        max-width: 360px;
+        width: 100%;
+        gap: 48px;
+        padding: 32px 24px;
+    }
+    .sitter-profile-info-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .sitter-profile-sticky-container-mobile {
+        display: none;
+    }
+    .sitter-profile-sticky-main-container {
+        width: 100%;
+        gap: 48px;
+        padding: 32px 16px;
+    }
+    .sitter-profile-sticky-main-group-headline-title {
+        font-size: 16px;
+    }
+    .sitter-profile-sticky-main-group-headline-text {
+        font-size: 16px;
+    }
+    .sitter-profile-sticky-main-group-headline-button {
+        font-size: 16px;
+    }
+    .sitter-profile-info-container {
+        justify-content: left;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sitter-profile-sticky-container-mobile {
+        display: none;
+    }
+    .sitter-profile-sticky-main-container {
+        width: 100%;
+        gap: 48px;
+        padding: 48px 24px;
+    }
+    .sitter-profile-sticky-main-group-headline-title {
+        font-size: 18px;
+    }
+    .sitter-profile-sticky-main-group-headline-text {
+        font-size: 18px;
+    }
+    .sitter-profile-sticky-main-group-headline-button {
+        font-size: 18px;
+    }
+    .sitter-profile-info-container {
+        justify-content: left;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.sitter-profile-info-container {
+    display: flex;
+}
+
+.sitter-profile-info-container-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sitter-profile-info-container-image {
+    width: 100px;
+    height: auto;
+}
+
+.sitter-profile-info-container-info {
+    display: grid;
+}
+
+.sitter-profile-info-container-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sitter-profile-info-container-city {
+    font-size: 18px;
+    color: #6D6D6D;
+}
+
+.sitter-profile-info-group-reviews {
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.sitter-profile-info-stars {
+    color: #FFC600;
+}
+
+.sitter-profile-info-reviews {
+    color: #6D6D6D;
+}
+
+.sitter-profile-info-group-bookings {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #008000;
+}
+
+.sitter-profile-info-bookings {
+    font-weight: bold;
+}
+
+.sitter-profile-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sitter-profile-description-container-title {
+    font-size: 18px;
+}
+
+.sitter-profile-description-images-container {
+    columns: 3;
+    column-gap: 10px;
+    box-sizing: border-box;
+}
+
+.sitter-profile-description-images-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.sitter-profile-description-images-image:hover {
+    transform: scale(1.02);
+}
+
+.sitter-profile-description-container-description {
+    font-size: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.sitter-profile-pre-format-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    white-space: pre-wrap;
+    margin: 0;
+    text-align: justify;
+}
+
+.sitter-profile-summary-preference-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sitter-profile-summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sitter-profile-summary-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sitter-profile-summary-text {
+    font-size: 15px;
+}
+
+.sitter-profile-preference-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitter-profile-preference-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sitter-profile-preference-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sitter-profile-preference-text {
+    font-size: 15px;
+}
+
+.sitter-profile-reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sitter-profile-group-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sitter-profile-group-reviews-text {
+    font-size: 24px;
+}
+
+.sitter-profile-review-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitter-profile-review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sitter-profile-review-card-info-container {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.sitter-profile-review-card-info-container-image-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sitter-profile-review-card-info-container-image {
+    width: 100%;
+    height: auto;
+}
+
+.sitter-profile-review-card-info-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sitter-profile-review-card-info-container-name-date {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sitter-profile-review-card-info-container-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sitter-profile-review-card-info-container-date {
+    font-size: 11px;
+    color: #6D6D6D;
+}
+
+.sitter-profile-review-card-info-container-stars-verified {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sitter-profile-review-card-info-container-stars {
+    color: #FFC600;
+    font-size: 15px;
+}
+
+.sitter-profile-review-card-info-container-verified {
+    color: #008000;
+    font-size: 11px;
+}
+
+.sitter-profile-review-card-info-container-text {
+    font-size: 15px;
+}
+
+.sitter-profile-page-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.sitter-profile-sticky-main-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    position: sticky;
+    top: 50px;
+    border-radius: 5px;
+}
+
+.sitter-profile-sticky-main-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitter-profile-sticky-main-group-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sitter-profile-sticky-main-group-headline-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sitter-profile-sticky-main-group-headline-button {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+    padding-block: 15px;
+    border-radius: 5px;
+}
+
+.brown-text {
+    color: #5E3104;
+}
+
+.brown-button {
+    background-color: #5E3104;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.brown-button:hover {
+    background-color: #8a5a29;
+}
+.disable-brown-button {
+    background-color: #5E3104;
+    opacity: 0.5;
+}
+
+.green-text {
+    color: #008000;
+}
+
+.green-button {
+    background-color: #008000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.green-button:hover {
+    background-color: #2b922b;
+}
+.disable-green-button {
+    background-color: #008000;
+    opacity: 0.5;
+}

@@ -1,0 +1,58 @@
+.profile-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 1120px;
+    padding-block: 30px;
+}
+
+.profile-main-image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-main-image {
+    width: 100%;
+    height: auto;
+}
+
+.profile-main-divider {
+    width: 100%;
+}
+
+.profile-main-info {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-main-info-name {
+    font-size: 30px;
+}
+
+.profile-main-info-email {
+    font-size: 18px;
+}
+
+.profile-main-info-button-container {
+    display: flex;
+}
+
+.profile-main-info-button-container-logout {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: #ffffff;
+    background-color: #D70004;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.profile-main-info-button-container-logout:hover {
+    background-color: #a70003;
+}

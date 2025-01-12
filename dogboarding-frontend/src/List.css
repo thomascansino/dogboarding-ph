@@ -1,0 +1,568 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.landscapeImg-container {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.landscapeImg {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.list-main-container {
+    width: 100%;
+    max-width: 1120px;
+    box-sizing: border-box;
+    position: relative;
+    display: grid;
+    gap: 40px;
+}
+
+@media (max-width: 667px) {
+    .list-container {
+        padding-inline: 16px;
+    }
+    .list-main-container {
+        padding-bottom: 64px;
+    }
+    .list-main-search-container {
+        padding: 16px;
+        align-items: center;
+    }
+    .list-group-container {
+        justify-content: center;
+    }
+    .listing-card {
+        display: grid;
+        grid-template-rows: 180px 1fr 50px;
+    }
+    .listing-card-info {
+        box-sizing: border-box;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .listing-card-info-name {
+        font-size: 18px;
+        color: #5E3104;
+        text-align: center;
+    }
+    .listing-card-info-city {
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E3104;
+        text-align: center;
+    }
+    .listing-card-info-summary {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #808080;
+        display: none;
+    }
+    .listing-card-info-group-reviews {
+        font-size: 15px;
+        text-align: center;
+    }
+    .listing-card-info-stars {
+        color: #FFC600;
+    }
+    .listing-card-info-reviews {
+        color: #808080;
+    }
+    .listing-card-info-group-bookings {
+        font-size: 15px;
+        color: #008000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .listing-card-info-bookings {
+        font-weight: 500;
+    }
+    .listing-card-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        box-sizing: border-box;
+    }
+    .listing-card-image-container {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .list-fixed-frame {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 668px) {
+    .list-container {
+        padding-inline: 16px;
+    }
+    .list-main-container {
+        padding-bottom: 64px;
+    }
+    .list-main-search-container {
+        padding: 30px;
+    }
+    .list-group-container {
+        justify-content: center;
+    }
+    .listing-card {
+        display: grid;
+        grid-template-columns: 180px 400px 1fr;
+    }
+    .listing-card-info {
+        box-sizing: border-box;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .listing-card-info-name {
+        font-size: 18px;
+        color: #5E3104;
+    }
+    .listing-card-info-city {
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E3104;
+    }
+    .listing-card-info-summary {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #808080;
+    }
+    .listing-card-info-group-reviews {
+        font-size: 15px;
+    }
+    .listing-card-info-stars {
+        color: #FFC600;
+    }
+    .listing-card-info-reviews {
+        color: #808080;
+    }
+    .listing-card-info-group-bookings {
+        font-size: 15px;
+        color: #008000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .listing-card-info-bookings {
+        font-weight: 500;
+    }
+    .listing-card-price {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        box-sizing: border-box;
+        padding-block: 20px;
+        padding-right: 5px;
+    }
+    .listing-card-image-container {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .list-fixed-frame {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .list-container {
+        padding-inline: 80px;
+    }
+    .list-main-container {
+        padding-bottom: 96px;
+    }
+    .list-main-search-container {
+        padding: 30px;
+    }
+    .list-group-container {
+        justify-content: center;
+    }
+    .listing-card {
+        display: grid;
+        grid-template-columns: 180px 350px 1fr;
+    }
+    .listing-card-info {
+        box-sizing: border-box;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .listing-card-info-name {
+        font-size: 18px;
+        color: #5E3104;
+    }
+    .listing-card-info-city {
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E3104;
+    }
+    .listing-card-info-summary {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #808080;
+    }
+    .listing-card-info-group-reviews {
+        font-size: 15px;
+    }
+    .listing-card-info-stars {
+        color: #FFC600;
+    }
+    .listing-card-info-reviews {
+        color: #808080;
+    }
+    .listing-card-info-group-bookings {
+        font-size: 15px;
+        color: #008000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .listing-card-info-bookings {
+        font-weight: 500;
+    }
+    .listing-card-price {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        box-sizing: border-box;
+        padding-block: 20px;
+        padding-right: 5px;
+    }
+    .listing-card-image-container {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .list-fixed-frame {
+        display: none;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .list-container {
+        padding-inline: 128px;
+    }
+    .list-main-container {
+        padding-bottom: 96px;
+    }
+    .list-main-search-container {
+        padding: 30px;
+    }
+    .list-group-container {
+        justify-content: center;
+    }
+    .listing-card {
+        display: grid;
+        grid-template-columns: 180px 400px 1fr;
+    }
+    .listing-card-info {
+        box-sizing: border-box;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .listing-card-info-name {
+        font-size: 18px;
+        color: #5E3104;
+    }
+    .listing-card-info-city {
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E3104;
+    }
+    .listing-card-info-summary {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #808080;
+    }
+    .listing-card-info-group-reviews {
+        font-size: 15px;
+    }
+    .listing-card-info-stars {
+        color: #FFC600;
+    }
+    .listing-card-info-reviews {
+        color: #808080;
+    }
+    .listing-card-info-group-bookings {
+        font-size: 15px;
+        color: #008000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .listing-card-info-bookings {
+        font-weight: 500;
+    }
+    .listing-card-price {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        box-sizing: border-box;
+        padding-block: 20px;
+        padding-right: 5px;
+    }
+    .listing-card-image-container {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .list-fixed-frame {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .list-container {
+        padding-inline: 128px;
+    }
+    .list-main-container {
+        padding-bottom: 96px;
+    }
+    .list-main-search-container {
+        padding: 30px;
+    }
+    .listing-card {
+        display: grid;
+        grid-template-columns: 180px 400px 1fr;
+    }
+    .listing-card-info {
+        box-sizing: border-box;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .listing-card-info-name {
+        font-size: 18px;
+        color: #5E3104;
+    }
+    .listing-card-info-city {
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E3104;
+    }
+    .listing-card-info-summary {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #808080;
+    }
+    .listing-card-info-group-reviews {
+        font-size: 15px;
+    }
+    .listing-card-info-stars {
+        color: #FFC600;
+    }
+    .listing-card-info-reviews {
+        color: #808080;
+    }
+    .listing-card-info-group-bookings {
+        font-size: 15px;
+        color: #008000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .listing-card-info-bookings {
+        font-weight: 500;
+    }
+    .listing-card-price {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        box-sizing: border-box;
+        padding-block: 20px;
+        padding-right: 5px;
+    }
+    .listing-card-image-container {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .list-fixed-frame {
+        display: flex;
+    }
+}
+
+.list-main-search-container {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-main-search-headline {
+    color: #5E3104;
+    font-size: 18px;
+}
+
+.list-main-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.list-main-search-icon {
+    position: absolute;
+    right: 20px;
+    color: #6D6D6D;
+}
+
+.list-main-search-input {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-block: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 5px;
+    transition: box-shadow 0.1s ease-out;
+    color: #6D6D6D;
+}
+.list-main-search-input:focus {
+    outline: none;
+    box-shadow: 0 0 8px 2px #5E3104;
+}
+.list-main-search-input:focus::-webkit-search-cancel-button,
+.list-main-search-input:hover::-webkit-search-cancel-button {
+    display: none;
+}
+
+.list-group-container {
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.list-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    max-width: 636px;
+}
+
+.listing-card {
+    width: 100%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.listing-card:hover {
+    transform: translateX(5px);
+}
+
+.listing-card-image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.listing-card-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.listing-card-price-cost {
+    font-size: 18px;
+    color: #FEB125;
+}
+
+.listing-card-price-text {
+    font-size: 11px;
+}
+
+.list-frame-page-container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.list-fixed-frame {
+    color: #6D6D6D;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+    position: sticky;
+    top: 30px;
+    box-sizing: border-box;
+}
+
+.list-fixed-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.list-left-container {
+    user-select: none;
+}
+
+.list-left-container-icon {
+    font-size: 80px;
+}
+
+.list-left-container-icon-moneyOff {
+    font-size: 100px;
+}
+
+.list-right-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+    width: 100%;
+}
+
+.list-right-container-title {
+    font-weight: bold;
+}
+
+.list-right-container-text {
+    font-size: 15px;
+}

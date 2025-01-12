@@ -1,0 +1,116 @@
+.header-container {
+    background-color: #CCAF80;
+    color: #5E3104;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    position: relative;
+}
+
+.nav-frame {
+    display: flex;
+}
+
+.nav-frame-burger-menu {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav-frame-burger-menu:hover {
+    color: #944e09;
+}
+
+.header-logo-container {
+    display: flex;
+}
+
+.header-logo {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #5E3104;
+    transition: color 0.2s ease-out;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #944e09;
+}
+
+.nav-modal-container {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #CCAF80;
+    border: 1px solid #5E3104;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 8px;
+    z-index: 1;
+    width: max-content;
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        padding-inline: 16px;
+    }
+    .header-logo-container {
+        width: 150px;
+    }
+    .nav-frame {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .nav-frame-burger-menu {
+        display: none;
+    }
+    .header-container {
+        padding-inline: 80px;
+    }
+    .header-logo-container {
+        width: 150px;
+    }
+    .nav-frame {
+        gap: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-frame-burger-menu {
+        display: none;
+    }
+    .header-container {
+        padding-inline: 128px;
+    }
+    .header-logo-container {
+        width: 200px;
+    }
+    .nav-frame {
+        gap: 24px;
+    }
+}

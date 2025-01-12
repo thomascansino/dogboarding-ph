@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.blocked {
+    pointer-events: none;
+}
+
+.modal {
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+    width: 100vw;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.modal-form-container {
+    outline: 1px solid rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    max-width: 1120px;
+    box-sizing: border-box;
+}
+
+.document-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.shadow {
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.page-icon {
+    color: #5E3104;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+}
+.page-icon:hover {
+    color: #8a5a29;
+}
+.disable-page-icon {
+    color: #5E3104;
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+.center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding-inline: 16px;
+    }
+    .modal {
+        padding-inline: 16px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .content {
+        padding-inline: 80px;
+    }
+    .modal {
+        padding-inline: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        padding-inline: 128px;   
+    }
+    .modal {
+        padding-inline: 128px;
+    }
+    .modal-form-container {
+        padding-inline: 96px;
+    }
+}

@@ -1,0 +1,53 @@
+.complete-profile-modal-main-container {
+    display: grid;
+    background-color: #D9D9D9;
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 740px;
+}
+
+@media (max-width: 767px) {
+    .complete-profile-modal-main-container {
+        gap: 48px;
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .complete-profile-modal-main-container {
+        gap: 48px;
+        padding: 48px 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .complete-profile-modal-main-container {
+        gap: 48px;
+        padding: 48px 80px;
+    }
+}
+
+.complete-profile-modal-main-text {
+    font-size: 18px;
+}
+
+.complete-profile-modal-main-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.complete-profile-modal-main-button {
+    background-color: #5E3104;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.complete-profile-modal-main-button:hover {
+    background-color: #8a5a29;
+}

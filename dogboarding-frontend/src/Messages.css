@@ -1,0 +1,138 @@
+.messages-main-container {
+    max-width: 1120px;
+    width: 100%;
+    padding-block: 50px 100px;
+    display: grid;
+    gap: 20px;
+}
+
+.messages-main-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-main-section-container-headline {
+    font-size: 18px;
+    color: #6D6D6D;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.messages-main-page-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.messages-main-section-card-container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-top: 20px;
+    gap: 20px;
+}
+.messages-main-section-card-container:hover {
+    background-color: #D9D9D9;
+}
+
+.messages-main-section-card-container-image-info-container {
+    display: flex;
+    gap: 10px;
+}
+
+.messages-main-section-card-container-image-container {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.messages-main-section-card-container-image {
+    width: 100%;
+    height: auto;
+}
+
+.messages-main-section-card-container-info-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    width: 100%;
+}
+
+.messages-main-section-card-container-info-container-name {
+    font-size: 15px;
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.messages-main-section-card-container-info-container-recentMessage {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    grid-column: 1;
+    grid-row: 2;
+    color: #5a5a5a;
+}
+
+.messages-main-section-card-container-info-container-lastUpdated {
+    font-size: 11px;
+    color: #A9A9A9;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.messages-main-section-card-container-info-container-status {
+    font-size: 11px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.messages-main-section-card-container-divider {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    width: 100%;
+    margin: 0;
+}
+
+.green-shape {
+    color: #ffffff;
+    background-color: #008000;
+    border-radius: 3px;
+    width: fit-content;
+    padding-block: 2px;
+    padding-inline: 10px;
+}
+
+.yellow-shape {
+    color: #000000;
+    background-color: #E2B000;
+    border-radius: 3px;
+    width: fit-content;
+    padding-block: 2px;
+    padding-inline: 10px;
+}
+
+.red-shape {
+    color: #ffffff;
+    background-color: #af181a;
+    border-radius: 3px;
+    width: fit-content;
+    padding-block: 2px;
+    padding-inline: 10px;
+}
+
+.grey-shape {
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    width: fit-content;
+    padding-block: 2px;
+    padding-inline: 10px;
+}

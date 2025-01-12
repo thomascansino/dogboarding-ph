@@ -1,0 +1,123 @@
+.edit-sitter-profile-info-container-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.edit-sitter-profile-info-container-image-container:hover {
+    filter: brightness(80%);
+}
+
+.edit-sitter-profile-info-container-image-container-input {
+    display: none;
+}
+
+.edit-sitter-profile-info-container-image-icon {
+    color: #ffffff;
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.edit-sitter-profile-info-container-image {
+    width: 100px;
+    height: auto;
+    filter: brightness(60%);
+}
+
+.edit-sitter-profile-info-container-description-icon {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+.edit-sitter-profile-info-container-description-icon:hover {
+    transform: scale(1.1);
+}
+
+.edit-sitter-profile-description-images-image-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.edit-sitter-profile-description-images-image-container:hover {
+    transform: scale(1.02);
+}
+
+.edit-sitter-profile-description-images-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #ffffff;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.edit-sitter-profile-description-images-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    filter: brightness(60%);
+}
+
+.edit-sitter-profile-title-icons {
+    font-size: 18px;
+    color: #5E3104;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+.edit-sitter-profile-title-icons:hover {
+    transform: scale(1.1);
+}
+
+.edit-sitter-profile-title-icons-submit {
+    font-size: 18px;
+    color: #008000;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+.edit-sitter-profile-title-icons-submit:hover {
+    transform: scale(1.1);
+}
+
+.edit-sitter-profile-description-container-description {
+    font-size: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.edit-sitter-profile-pre-format-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    white-space: pre-wrap;
+    margin: 0;
+    text-align: justify;
+}
+
+.edit-sitter-profile-textarea {
+    resize: none;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    border: 1px solid #000;
+    background-color: #f9fafb;
+}
+
+.edit-sitter-profile-input {
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}

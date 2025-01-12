@@ -1,0 +1,15 @@
+.image-modal-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-modal-image {
+    width: 100%;
+    height: auto;
+    transform: scale(3);
+}
