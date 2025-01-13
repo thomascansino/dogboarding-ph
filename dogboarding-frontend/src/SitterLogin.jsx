@@ -94,11 +94,13 @@ function SitterLogin() {
                                     <div className='auth-text'>Password</div>
                                 </div>
                                 { isLoginLoading ?
-                                <ClipLoader
-                                color='#5E3104'
-                                loading={isLoginLoading}
-                                size={25}
-                                /> :
+                                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <ClipLoader
+                                    color='#5E3104'
+                                    loading={isLoginLoading}
+                                    size={25}
+                                    />
+                                </div> :
                                 <button className='auth-button shadow' type='submit'>Login</button>}
                             </div>
                         </form>
