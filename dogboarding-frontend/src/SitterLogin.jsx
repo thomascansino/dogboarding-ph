@@ -2,6 +2,7 @@ import { useState, useContext } from 'react'
 import { IsSitterAuthContext, IsAuthContext } from './App.jsx'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import ClipLoader from 'react-spinners/ClipLoader'
 import Cookies from 'universal-cookie'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
@@ -14,6 +15,7 @@ function SitterLogin() {
     
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
+    const [ isLoginLoading, setIsLoginLoading ] = useState(false);
     
     const cookies = new Cookies();
     const navigate = useNavigate();
@@ -32,6 +34,7 @@ function SitterLogin() {
         };
 
         try {
+            setIsLoginLoading(true);
             // give credentials to server
             const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/sitters/login`, { email, password });
             
@@ -64,9 +67,11 @@ function SitterLogin() {
             setSitterData(sitterInfo.data);
             
             console.log('Logged in sitter:', sitterInfo.data);
+            setIsLoginLoading(false);
             navigate(`/sitter-profile/${sitterInfo.data._id}`);
         } catch (err) {
             console.error('Login failed:', err.response?.data?.message || err.message || err);
+            setIsLoginLoading(false);
         };
 
     };
@@ -88,7 +93,13 @@ function SitterLogin() {
                                     <input onChange={handlePassword} value={password} className='auth-input' type='password' />
                                     <div className='auth-text'>Password</div>
                                 </div>
-                                <button className='auth-button shadow' type='submit'>Login</button>
+                                { isLoginLoading ?
+                                <ClipLoader
+                                color='#5E3104'
+                                loading={isLoginLoading}
+                                size={25}
+                                /> :
+                                <button className='auth-button shadow' type='submit'>Login</button>}
                             </div>
                         </form>
                         <span className='auth-forgot-pass-text'>Forgot your password?</span>
