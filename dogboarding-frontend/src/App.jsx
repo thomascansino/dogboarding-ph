@@ -22,6 +22,7 @@ import PrivateSitterRoute from './PrivateSitterRoute.jsx'
 import PublicRoute from './PublicRoute.jsx'
 import PublicSitterRoute from './PublicSitterRoute.jsx'
 import LinkExclusiveRoute from './LinkExclusiveRoute.jsx'
+import PrivacyPolicy from './PrivacyPolicy.jsx'
 import './App.css'
 import './Auth.css'
 
@@ -166,6 +167,7 @@ function App() {
               <Route path='/be-a-dog-sitter' element={<BeADogSitter />} />
               <Route path='/list' element={<List />} />
               <Route path='/sitter-profile/:sitterId' element={<SitterProfile />} />
+              <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
 
               {/* USER-END */}

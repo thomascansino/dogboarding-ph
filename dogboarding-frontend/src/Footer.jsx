@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './App.css'
 import './Footer.css'
 
@@ -14,7 +15,7 @@ function Footer() {
                     <i className="fa-brands fa-linkedin"></i>
                 </div>
 
-                <span>{new Date().getFullYear()} © DogBoarding | Terms & Conditions | Privacy Policy</span>
+                <span>{new Date().getFullYear()} © DogBoarding | <Link to='/privacy-policy' className='disable-link'>Terms & Conditions</Link> | <Link to='/privacy-policy' className='disable-link'>Privacy Policy</Link></span>
             </div>
         </footer>
     );

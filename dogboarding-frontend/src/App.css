@@ -92,6 +92,11 @@ body {
     opacity: 0.5;
 }
 
+.disable-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .center {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -128,4 +133,17 @@ body {
     .modal-form-container {
         padding-inline: 96px;
     }
+}
+
+.privacy-policy-container {
+    width: 100%;
+    max-width: 1120px;
+    padding-block: 24px 96px;
+}
+
+.privacy-policy-container h1,
+.privacy-policy-container h2,
+.privacy-policy-container h3,
+.privacy-policy-container h4 {
+    color: #5E3104;
 }
