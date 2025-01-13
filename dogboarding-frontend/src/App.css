@@ -44,7 +44,6 @@ body {
 }
 
 .modal-form-container {
-    outline: 1px solid rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
