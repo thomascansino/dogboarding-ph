@@ -39,6 +39,9 @@
         align-items: center;
         gap: 24px;
     }
+    .sitter-profile-description-images-container {
+        column-gap: 4px;
+    }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -64,6 +67,9 @@
         align-items: center;
         gap: 30px;
     }
+    .sitter-profile-description-images-container {
+        column-gap: 8px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -88,6 +94,9 @@
         justify-content: left;
         align-items: center;
         gap: 30px;
+    }
+    .sitter-profile-description-images-container {
+        column-gap: 8px;
     }
 }
 
@@ -160,7 +169,6 @@
 
 .sitter-profile-description-images-container {
     columns: 3;
-    column-gap: 10px;
     box-sizing: border-box;
 }
 
