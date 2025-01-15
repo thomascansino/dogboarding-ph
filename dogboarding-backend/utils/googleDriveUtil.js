@@ -1,15 +1,14 @@
 const fs = require('fs');
 const { Readable } = require('stream');
 const { google } = require('googleapis');
-const apikeys = require('../apikey.json');
 const SCOPE = ['https://www.googleapis.com/auth/drive'];
 
 // Initialize Google Drive API w/ authorization
 const authorize = async () => {
     const jwtClient = new google.auth.JWT( // use JWT client
-        apikeys.client_email, // service account email
+        process.env.GOOGLE_CLIENT_EMAIL, // service account email
         null, 
-        apikeys.private_key, // service account private key
+        process.env.GOOGLE_PRIVATE_KEY, // service account private key
         SCOPE, // url of google apis
     );
 
