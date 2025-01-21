@@ -32,7 +32,6 @@ function Header() {
                             (
                                 <>
                                     <Link to='/' className='nav-link'>Home</Link>
-                                    <Link to='/' className='nav-link'>About</Link>
                                     <Link to='/be-a-dog-sitter' className='nav-link'>Be A Dog Sitter</Link>
                                     <Link to='/messages' className='nav-link'>Messages</Link>
                                     <Link to='/profile' className='nav-link'>Profile</Link>
@@ -41,7 +40,6 @@ function Header() {
                             (
                                 <>
                                     <Link to='/' className='nav-link'>Home</Link>
-                                    <Link to='/' className='nav-link'>About</Link>
                                     <Link to='/login' className='nav-link'>Login</Link>
                                     <Link to='/sitter/messages' className='nav-link'>Messages</Link>
                                     <Link to='/edit/sitter-profile' className='nav-link'>Profile</Link>
@@ -51,7 +49,6 @@ function Header() {
                             (
                                 <>
                                     <Link to='/' className='nav-link'>Home</Link>
-                                    <Link to='/' className='nav-link'>About</Link>
                                     <Link to='/be-a-dog-sitter' className='nav-link'>Be A Dog Sitter</Link>
                                     <Link to='/login' className='nav-link'>Login</Link>
                                 </>
